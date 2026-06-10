@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f06a4b;
+  --color-primary-dark: #d65a3d;
+  --color-secondary: #008891;
+  --color-secondary-dark: #006f78;
+  --color-dark: #1f2937;
+  --color-light: #f9fafb;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-gray-800 bg-white;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
